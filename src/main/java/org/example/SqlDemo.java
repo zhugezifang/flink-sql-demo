@@ -42,7 +42,7 @@ public class SqlDemo {
                 "                   name string\n" +
                 " ) WITH (\n" +
                 "   'connector' = 'jdbc',\n" +
-                "   'url' = 'jdbc:mysql://101.71.102.255:8081/kafka?serverTimezone=UTC',\n" +
+                "   'url' = 'jdbc:mysql://ip:8081/kafka?serverTimezone=UTC',\n" +
                 "   'table-name' = 'test_info',\n" +
                 "   'username' = 'kafka',\n" +
                 "   'password' = 'Bonc@123'\n" +

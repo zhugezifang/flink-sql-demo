@@ -16,7 +16,7 @@ public class MysqlToMysql {
 
         String mysql_sql = "CREATE TABLE %s (%s) WITH (\n" +
                 "   'connector' = 'jdbc',\n" +
-                "   'url' = 'jdbc:mysql://10.71.7.89:3306/temp?autoReconnect=true&useSSL=false',\n" +
+                "   'url' = 'jdbc:mysql://ip:3306/temp?autoReconnect=true&useSSL=false',\n" +
                 "   'table-name' = '%s',\n" +
                 "   'username' = 'root',\n" +
                 "   'password' = '123456'\n" +

@@ -18,7 +18,7 @@ public class SqlSinkMysql {
         tEnv.executeSql("CREATE TABLE myTable (id INT, cnt BIGINT) WITH ('connector'='datagen','rows-per-second'='5','fields.id.min'='1','fields.id.max'='500')");
 
         tEnv.executeSql("CREATE TABLE mysqlSinkTable (id INT, cnt BIGINT,primary key (id) not enforced) " +
-                "WITH('connector'='jdbc', 'url'='jdbc:mysql://10.71.8.79:3306/temp?autoReconnect=true&useSSL=false', " +
+                "WITH('connector'='jdbc', 'url'='jdbc:mysql://ip:3306/temp?autoReconnect=true&useSSL=false', " +
                 "'table-name'='test', 'username'='root', 'password'='123456', " +
                 "'driver'='com.mysql.jdbc.Driver')");
 
